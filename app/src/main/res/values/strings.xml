@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CVT Admin Panel</string>
+    <string name="login">Войти</string>
+    <string name="password">Пароль</string>
+    <string name="dashboard">Главная</string>
+    <string name="orders">Заказы</string>
+    <string name="chat">Чат</string>
+    <string name="settings">Настройки</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "136902505194",
+    "project_id": "cvt-admin-panel",
+    "storage_bucket": "cvt-admin-panel.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136902505194:android:658a7654e03cc595601d93",
+        "android_client_info": {
+          "package_name": "com.cvt.admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-R3mhPALr6OdsKJXK-77rR1IV5SKElLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
