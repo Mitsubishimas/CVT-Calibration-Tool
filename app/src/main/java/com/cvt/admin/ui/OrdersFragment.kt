@@ -15,11 +15,12 @@ class OrdersFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view = inflater.inflate(R.layout.fragment_orders, container, false)
-        
-        val textView: TextView = view.findViewById(R.id.text_orders)
-        textView.text = "Управление заказами\n\n- Калибровка CVT8\n- Активация программ\n- Покупка ПО"
-        
-        return view
+        return inflater.inflate(R.layout.fragment_orders, container, false)
+    }
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val textView = view.findViewById<TextView>(R.id.text_orders)
+        textView.text = "Управление заказами"
     }
 }

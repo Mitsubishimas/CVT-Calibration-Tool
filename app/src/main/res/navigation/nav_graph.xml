@@ -7,21 +7,25 @@
     <fragment
         android:id="@+id/dashboardFragment"
         android:name="com.cvt.admin.ui.DashboardFragment"
-        android:label="Главная" />
+        android:label="Главная"
+        tools:layout="@layout/fragment_dashboard" />
         
     <fragment
         android:id="@+id/ordersFragment"
         android:name="com.cvt.admin.ui.OrdersFragment"
-        android:label="Заказы" />
+        android:label="Заказы"
+        tools:layout="@layout/fragment_orders" />
         
     <fragment
         android:id="@+id/chatFragment"
         android:name="com.cvt.admin.ui.ChatFragment"
-        android:label="Чат поддержки" />
+        android:label="Чат поддержки"
+        tools:layout="@layout/fragment_chat" />
         
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.cvt.admin.ui.SettingsFragment"
-        android:label="Настройки" />
+        android:label="Настройки"
+        tools:layout="@layout/fragment_settings" />
         
 </navigation>

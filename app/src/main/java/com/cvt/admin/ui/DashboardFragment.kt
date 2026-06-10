@@ -15,11 +15,12 @@ class DashboardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view = inflater.inflate(R.layout.fragment_dashboard, container, false)
-        
-        val textView: TextView = view.findViewById(R.id.text_dashboard)
-        textView.text = "Добро пожаловать в CVT Admin Panel!\n\nСтатистика загружается..."
-        
-        return view
+        return inflater.inflate(R.layout.fragment_dashboard, container, false)
+    }
+    
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val textView = view.findViewById<TextView>(R.id.text_dashboard)
+        textView.text = "Добро пожаловать в CVT Admin Panel!"
     }
 }
