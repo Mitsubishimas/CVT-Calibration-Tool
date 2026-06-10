@@ -23,7 +23,9 @@
         android:hint="Пароль администратора"
         android:inputType="textPassword"
         android:padding="16dp"
-        android:textColorHint="@color/text_secondary" />
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:background="@color/card_blue" />
 
     <Button
         android:id="@+id/btnLogin"
@@ -33,5 +35,12 @@
         android:backgroundTint="@color/accent_blue"
         android:text="Войти"
         android:textColor="@color/dark_blue" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
 
 </LinearLayout>

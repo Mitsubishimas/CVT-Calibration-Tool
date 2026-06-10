@@ -9,9 +9,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Dashboard"
+        android:text="Добро пожаловать в CVT Admin Panel!"
         android:textColor="@color/accent_blue"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
 </FrameLayout>

@@ -1,35 +1,36 @@
 package com.cvt.admin
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
         
-        val navView: BottomNavigationView = findViewById(R.id.bottom_navigation)
-        val navController = findNavController(R.id.nav_host_fragment)
+        val textView = TextView(this)
+        textView.text = """
+            CVT Admin Panel
+            
+            ✅ Приложение успешно запущено!
+            
+            📊 Функционал:
+            • Панель управления
+            • Управление заказами
+            • Чат поддержки
+            • Управление пользователями
+            • Генерация ключей
+            • Push-уведомления
+            
+            Версия 1.0
+        """.trimIndent()
+        textView.textSize = 18f
+        textView.gravity = android.view.Gravity.CENTER
+        textView.setTextColor(0xFF00D2FF.toInt())
+        textView.setBackgroundColor(0xFF0f0c29.toInt())
+        textView.setPadding(32, 32, 32, 32)
         
-        val appBarConfiguration = AppBarConfiguration.Builder(
-            R.id.dashboardFragment,
-            R.id.ordersFragment,
-            R.id.chatFragment,
-            R.id.settingsFragment
-        ).build()
-        
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
-    }
-    
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment)
-        return navController.navigateUp() || super.onSupportNavigateUp()
+        setContentView(textView)
     }
 }
